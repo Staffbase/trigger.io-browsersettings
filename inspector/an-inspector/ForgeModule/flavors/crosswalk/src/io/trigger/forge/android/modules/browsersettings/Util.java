@@ -22,4 +22,8 @@ public class Util {
 	public static void setAcceptCookies(boolean acceptCookies){		
 		// crosswalk does not support setAcceptThirdPartyCookies
 	}
+
+	public static void setForceTouchEnabled(boolean enableForceTouch) {
+		ForgeLog.w("browsersettings.setForceTouchEnabled() is only supported on iOS.");
+	}
 }

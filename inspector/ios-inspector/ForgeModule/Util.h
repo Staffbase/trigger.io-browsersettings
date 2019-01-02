@@ -12,4 +12,5 @@
 + (void) setAllowsInlineMediaPlayback:(BOOL)allowsInlineMediaPlayback;
 + (void) setMediaPlaybackRequiresUserAction:(BOOL)mediaPlaybackRequiresUserAction;
 + (void) setCookieAcceptPolicy:(BOOL)acceptCookies;
++ (void) setForceTouchEnabled:(BOOL)allowsForceTouch;
 @end

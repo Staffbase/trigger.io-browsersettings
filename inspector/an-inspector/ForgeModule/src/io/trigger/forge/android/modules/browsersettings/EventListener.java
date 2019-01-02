@@ -14,6 +14,7 @@ public class EventListener extends ForgeEventListener {
 		if (config.has("media_playback") && config.getAsJsonObject("media_playback").has("inline_video") && config.getAsJsonObject("media_playback").get("inline_video").getAsBoolean()) {
 			Util.setInlineVideo(true);
 		}
+
 		if (config.has("media_playback") && config.getAsJsonObject("media_playback").has("autoplay_video") && config.getAsJsonObject("media_playback").get("autoplay_video").getAsBoolean()) {
 			ForgeApp.getActivity().runOnUiThread(new Runnable() {
 				public void run() {
@@ -21,8 +22,13 @@ public class EventListener extends ForgeEventListener {
 				}
 			});
 		}
+
 		if (config.has("accept_cookies") && config.get("accept_cookies").getAsBoolean()) {
 			Util.setAcceptCookies(true);
+		}
+
+		if (config.has("enable_force_touch") && config.get("enable_force_touch").getAsBoolean()) {
+			Util.setForceTouchEnabled(true);
 		}
 	}
 

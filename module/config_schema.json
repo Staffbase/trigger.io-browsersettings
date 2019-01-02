@@ -41,6 +41,11 @@
             "required": false,
             "type": "boolean",
             "description": "set this to 'true' to set the application's webview policy to accept cookies"
+        },
+        "enable_force_touch": {
+            "required": false,
+            "type": "boolean",
+            "description": "set this to 'true' to enable force touch for iOS"
         }
     }
 }

@@ -41,4 +41,14 @@
     }
 }
 
++ (void) setForceTouchEnabled:(BOOL)allowsForceTouch {
+    if (NSClassFromString(@"WKWebView") && [[ForgeApp sharedApp] useWKWebView]) {
+        WKWebView *webView = (WKWebView*)[[ForgeApp sharedApp] webView];
+        webView.allowsLinkPreview = allowsForceTouch;
+    } else {
+        UIWebView *webView = (UIWebView*)[[ForgeApp sharedApp] webView];
+        webView.allowsLinkPreview = allowsForceTouch;
+    }
+}
+
 @end

@@ -26,6 +26,9 @@
         }
         [[AVAudioSession sharedInstance] setDelegate:application.delegate];
     }
+    
+    BOOL enable_force_touch = [[config objectForKey:@"enable_force_touch"] boolValue];
+    [Util setForceTouchEnabled:enable_force_touch];
 }
 
 

@@ -28,4 +28,8 @@ public class Util {
 			cookieManager.setAcceptThirdPartyCookies(ForgeApp.getActivity().webView, acceptCookies);
 		}
 	}
+
+	public static void setForceTouchEnabled(boolean enableForceTouch) {
+		ForgeLog.w("browsersettings.setForceTouchEnabled() is only supported on iOS.");
+	}
 }
