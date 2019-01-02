@@ -1,8 +1,9 @@
 {
-    "description": "Set some useful browser configuration options.",
-    "min_platform_version": "v2.7.1",
-    "namespace": "sb_browsersettings",
-    "platform_version": "v2.7.1",
-    "version": "1.7",
-    "changes": "* allow disabling of 3D touch on iOS"
+	"description": "Set some useful browser configuration options.",
+	"min_platform_version": "v2.7.4",
+	"namespace": "sb_browsersettings",
+	"platform_version": "v2.7.4",
+	"version": "1.7",
+	"changes": "* allow disabling of 3D touch on iOS",
+	"max_platform_version": "v2.7.4"
 }
